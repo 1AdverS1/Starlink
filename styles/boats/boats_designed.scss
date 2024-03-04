@@ -1,0 +1,105 @@
+.designed {
+  @include display(column);
+  background-image: url(../../images/boats/boats_weather_d.jpg);
+  background-size: cover;
+  @include wh(100%, 780px);
+  margin-top: 150px;
+
+}
+
+.designed_heading {
+  color: white;
+  font: 700 40px/36px DIN_Regular, Arial, Verdana, sans-serif;
+  line-height: 1.2;
+  margin-left: 250px;
+  margin-top: 130px;
+}
+
+.designed_text {
+  color: white;
+  font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+  margin-top: 20px;
+  margin-left: 250px;
+
+}
+
+.designed_buttom {
+  @include wh(98px, 36px);
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 2px;
+  margin-left: 250px;
+
+}
+
+.engineered_buttom:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.engineered_buttom_text {
+  color: white;
+  font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+  .designed_heading {
+    font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-left: 10px;
+  }
+
+  .designed_text {
+    margin-left: 10px;
+  }
+
+  .designed_buttom {
+    margin-left: 10px;
+  }
+
+  .designed {
+    background-position: center;
+  }
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+  .designed_heading {
+    font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-left: 10px;
+  }
+
+  .designed_text {
+    margin-left: 10px;
+  }
+
+  .designed_buttom {
+    margin-left: 10px;
+  }
+}
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+  .designed_heading {
+    margin-left: 50px;
+  }
+
+  .designed_text {
+    margin-left: 50px;
+  }
+
+  .designed_buttom {
+    margin-left: 50px;
+  }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

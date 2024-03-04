@@ -1,0 +1,77 @@
+.easy {
+    width: 100%;
+    height: 780px;
+    background-image: url(../../images/boats/boats_install_d.jpg);
+    background-size: 100% 100%;
+}
+
+.easy_container {
+    width: 1460px;
+}
+
+.easy_block {
+    margin-left: 800px;
+    padding-top: 50px;
+}
+
+.easy_heading {
+    font: 700 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    color: white;
+}
+
+.easy_text {
+    color: white;
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+
+}
+
+.easy_link {
+    color: white;
+    text-decoration: none;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .easy_block {
+        margin-left: 10px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .easy_block {
+        margin-left: 300px;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .easy_block {
+        margin-left: 450px;
+    }
+}
+
+
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .easy_block {
+        margin-left: 600px;
+    }
+
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {}
+
+@media all and (min-width: 1501px) and (max-width: 1699px) {
+    .easy_block {
+        margin-left: 1000px;
+    }
+}
+
+@media all and (min-width: 1701px) and (max-width: 1980px) {
+    .easy_block {
+        margin-left: 1200px;
+    }
+
+}

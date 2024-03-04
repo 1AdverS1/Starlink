@@ -1,0 +1,115 @@
+.tarif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarif_heading {
+    color: white;
+    font: 700 36px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 60px;
+}
+
+.tarif_block {
+    width: 270px;
+    height: 280px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tarif_block_heading {
+    color: white;
+    font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.tarif_block_text {
+    color: #6b6b6b;
+    font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.block_price {
+    color: white;
+    font: 600 46px/62px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 42px;
+}
+
+.block_price_mo {
+    color: #6b6b6b;
+    font: 400 20px/27px DIN_Regular, Arial, Verdana, sans-serif;
+}
+
+.tarif_buttoms {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.tarif_buttoms_first {
+    color: white;
+    width: 117px;
+    height: 36px;
+    border: 1px solid white;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.tarif_buttoms_second {
+    background-color: white;
+    width: 94px;
+    height: 36px;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    border-radius: 6px;
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .tarif_heading {
+        font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .trial_form_general {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trial_buttom {
+        width: 458px;
+        margin-left: 0;
+    }
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .tarif_heading {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

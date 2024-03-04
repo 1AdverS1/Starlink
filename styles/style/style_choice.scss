@@ -1,0 +1,127 @@
+@mixin display($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin hoverEffect($backgroundImage) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(#{$backgroundImage});
+    background-size: cover;
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: scale(1.02);
+  }
+}
+
+.choice {
+  @include display(row);
+  gap: 15px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.residential {
+  @include display(column);
+  @include wh(460px, 700px);
+  @include hoverEffect('../../images/home_residential_d.jpg');
+}
+
+.roam {
+  @include display(column);
+  @include wh(460px, 700px);
+  @include hoverEffect('../../images/home_roam_d.jpg');
+}
+
+.boat {
+  @include display(column);
+  @include wh(460px, 700px);
+  @include hoverEffect('../../images/home_boats_d.jpg');
+}
+
+.choice_heading {
+  color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+  font: 700 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+}
+
+.choice_content {
+  color: white;
+  margin-left: 15px;
+  font: 400 25px/30px DIN_Regular, Arial, Verdana, sans-serif;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+  .choice {
+    flex-direction: column;
+  }
+
+  .nav_residental opacity {
+    opacity: 0;
+  }
+
+  .residential {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .roam {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .boat {
+    height: 300px;
+    background-size: contain;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .choice {
+    flex-direction: column;
+  }
+
+  .nav_residental opacity {
+    opacity: 0;
+  }
+
+  .residential {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .roam {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .boat {
+    height: 300px;
+    background-size: contain;
+  }
+
+}
+
+@media all and (min-width: 993px) and (max-width: 1199px) {}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}

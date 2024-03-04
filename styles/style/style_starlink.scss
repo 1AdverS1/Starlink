@@ -1,0 +1,33 @@
+.starlink {
+    @include display(column);
+    margin-top: 150px;
+}
+
+.Starlink_heading {
+    font: 700 51px/62px DIN_Regular, Arial, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.starlink_content {
+    color: white;
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .Starlink_heading {
+        font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {}
+
+@media all and (min-width: 993px) and (max-width: 1199px) {}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}

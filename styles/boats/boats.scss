@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../../din-regular.otf');
+    /* IE9 Compat Modes */
+    src: url('../../din-regular.otf') format('embedded-opentype'),
+        /* IE6-IE8 */
+}
+
+@mixin display($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@import './boats_header.scss';
+@import './boats_speed.scss';
+@import './boats_tarif.scss';
+@import './boats_stream.scss';
+@import './boats_advantagies.scss';
+@import './boats_designed.scss';
+@import './boats_easy.scss';
+@import './boats_box.scss';
+@import './boats_accessories.scss';
+@import './boats_costumers.scss';
+@import './boats_other_plans.scss';
+@import './boats_trial.scss';
+@import './boars_footer.scss';
+
+.special_background-container {
+    max-width: 1980px;
+    min-width: 300px;
+    height: 600px;
+    background-image: url(../../images/boats/boats_hero_d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .special_background-container {
+        width: 100%;
+
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .special_background-container {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}

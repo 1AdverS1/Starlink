@@ -1,0 +1,135 @@
+.designed {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 100px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+.designed_post {
+    @include display(column);
+    margin-top: 180px;
+
+}
+
+.designed_post_heading_top {
+    color: white;
+    font: 700 40px/34px DIN_Regular, Arial, Verdana, sans-serif;
+}
+
+.designed_post_heading_bottom {
+    color: white;
+    font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+
+}
+
+.designed_post_text {
+    color: white;
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.designed_link {
+    color: white;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .designed {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+    }
+
+    .designed_video {
+        width: 460px;
+        height: 460px;
+        margin-left: 20px;
+    }
+
+    .designed_post_heading_top {
+        font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+        margin-top: 20px;
+    }
+
+    .designed_post_text {
+        font: 400 14px/16px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+
+    .designed_post {
+        margin-left: 50px;
+        margin-top: 10px
+    }
+}
+
+
+
+@media all and (min-width: 650px) and (max-width: 1000px) {
+    .designed {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+    }
+
+
+    .designed {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .designed_post {
+        margin-left: 50px;
+        margin-top: 100px
+    }
+
+    .designed_image {
+        margin-left: 10px;
+
+    }
+
+
+
+
+
+    .designed {
+        gap: 50px;
+    }
+
+    .designed_video {
+        width: 480px;
+        height: 480px;
+        margin-left: 160px;
+        margin-top: 50px;
+    }
+
+    .designed_post {
+        margin-left: 50px;
+        margin-top: 100px
+    }
+
+}
+
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+    .designed {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+}
+
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {
+    .designed {
+        padding: 0;
+        gap: 50px;
+    }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

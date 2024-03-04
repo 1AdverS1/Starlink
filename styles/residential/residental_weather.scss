@@ -1,0 +1,95 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/residental/residential_weather_d.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 780px;
+    align-items: end;
+    margin-top: 150px;
+    margin-right: 300px;
+
+}
+
+.weather_heading {
+    color: white;
+    font: 700 40px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 130px;
+    padding-right: 400px;
+}
+
+.weather_text {
+    color: white;
+    font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 20px;
+    padding-right: 280px;
+
+}
+
+@media all and (min-width: 500px) and (max-width: 992px) {
+    .weather_heading {
+        padding-right: 70px;
+        margin-left: 10px;
+    }
+
+    .weather_text {
+        margin-left: 5px;
+        padding-right: 20px;
+        font: 400 14px/16px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .weather_heading {
+        padding-right: 370px;
+        margin-left: 10px;
+    }
+
+    .weather_text {
+        margin-left: 5px;
+        padding-right: 320px;
+        font: 400 14px/16px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1204px) {
+    .weather_heading {
+        padding-right: 20px;
+        margin-right: 125px;
+    }
+
+    .weather_text {
+        margin-left: 400px;
+        padding-right: 20px;
+    }
+}
+
+@media all and (min-width: 1205px) and (max-width: 1350px) {
+    .weather_heading {
+        padding-right: 20px;
+        margin-right: 125px;
+    }
+
+    .weather_text {
+        margin-left: 590px;
+        padding-right: 20px;
+    }
+
+}
+
+@media all and (min-width: 1350px) and (max-width: 1516px) {
+    .weather_heading {
+        padding-right: 20px;
+        margin-right: 125px;
+    }
+
+    .weather_text {
+        margin-left: 790px;
+        padding-right: 20px;
+    }
+}
+
+@media all and (min-width: 1517px) and (max-width: 1710px) {}
+
+@media all and (min-width: 1711px) and (max-width: 1980px) {}

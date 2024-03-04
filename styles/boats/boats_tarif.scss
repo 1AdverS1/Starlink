@@ -1,0 +1,159 @@
+.tarif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarif_heading {
+    color: white;
+    font: 700 36px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 60px;
+}
+
+.tarif_block_top_general {
+    display: flex;
+    flex-direction: row;
+    gap: 230px;
+    margin-top: 50px;
+}
+
+.general_block_heading {
+    font: 400 22px/27px DIN_Regular, Arial, Verdana, sans-serif;
+    color: #FAFAFA;
+}
+
+.top_general_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarif_block_general {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.tarif_block {
+    width: 308px;
+    height: 335px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tarif_block_heading {
+    color: white;
+    font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tarif_block_text {
+    color: white;
+    font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.block_price {
+    color: white;
+    font: 600 46px/62px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 42px;
+    text-align: center;
+}
+
+.block_price_mo {
+    color: #6b6b6b;
+    font: 400 20px/27px DIN_Regular, Arial, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tarif_buttoms {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.tarif_buttoms_first {
+    color: white;
+    width: 117px;
+    height: 36px;
+    border: 1px solid white;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.tarif_buttoms_second {
+    background-color: white;
+    width: 94px;
+    height: 36px;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    border-radius: 6px;
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .tarif_block_top_general {
+        gap: 100px;
+    }
+
+    .tarif_block_general {
+        flex-direction: column;
+    }
+
+    .tarif_block_top_general {
+        flex-direction: column;
+    }
+
+    .tarif_heading {
+        font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+    .tarif_block_top_general {
+        gap: 100px;
+    }
+
+    .tarif_block_general {
+        flex-direction: column;
+    }
+
+}
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .tarif_block_top_general {
+        gap: 100px;
+    }
+
+    .tarif_block_general {
+        flex-direction: column;
+    }
+
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

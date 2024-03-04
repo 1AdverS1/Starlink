@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../../din-regular.otf');
+    /* IE9 Compat Modes */
+    src: url('../../din-regular.otf') format('embedded-opentype'),
+        /* IE6-IE8 */
+}
+
+@mixin display($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin wh($minwidth, $maxwidth, $minheight, $maxheight) {
+    min-width: $minwidth;
+    max-width: $maxwidth;
+    min-height: $minheight;
+    max-height: $maxheight;
+}
+
+
+@import '../roam/roam_header.scss';
+@import '../roam/roam_speed.scss';
+@import '../roam/roam_tarif.scss';
+@import '../roam/roam_work_play.scss';
+@import '../roam/roam_pay.scss';
+@import '../roam/roam_online.scss';
+@import '../roam/roam_using.scss';
+@import '../roam/roam_box.scss';
+@import '../roam/roam_accessories.scss';
+@import '../roam/roam_weather.scss';
+@import '../roam/roam_costumers.scss';
+@import '../roam/roam_other_plans.scss';
+@import '../roam/roam_trial.scss';
+@import '../roam/roam_footer.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+.special_background-container {
+    width: 100%;
+    height: 611px;
+    background-image: url(../../images/roam/roam_hero_d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .special_background-container {
+        width: 100%;
+
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .special_background-container {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}

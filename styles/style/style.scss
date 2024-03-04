@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../../din-regular.otf');
+    /* IE9 Compat Modes */
+    src: url('../../din-regular.otf') format('embedded-opentype'),
+        /* IE6-IE8 */
+}
+
+@mixin display($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@import './style_header.scss';
+@import './style_speed.scss';
+@import './style_choice.scss';
+@import './style_starlink.scss';
+@import './style_connectevity.scss';
+@import './style_online.scss';
+@import './style_no_contracts.scss';
+@import './style_engineered.scss';
+@import './style_trial.scss';
+@import './style_footer.scss';
+
+.special_background-container {
+    max-width: 1980px;
+    min-width: 300px;
+    height: 600px;
+    background-image: url(../../images/home_hero_d.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .special_background-container {
+        width: 100%;
+
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .special_background-container {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {
+    .special_background-container {
+        background-size: 100% 100%;
+
+    }
+}

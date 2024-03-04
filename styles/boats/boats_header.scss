@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    max-height: 100px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header_logo {
+    @include wh(142px, 18px);
+    margin-top: 54px;
+    margin-left: 78px;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 40px;
+}
+
+.nav_residental {
+    color: white;
+    text-decoration: none;
+    font: 16px/26px Roboto, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.header_profile {
+    margin-left: 992px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.opacity {
+    opacity: 100%;
+}
+
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .header_logo {
+        margin-left: 20px;
+    }
+
+    .header_profile {
+        display: none;
+    }
+
+
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        display: none;
+    }
+
+
+}
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        margin-left: 100px;
+    }
+
+    .header_profile {
+        display: none;
+    }
+
+
+
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        margin-left: 100px;
+    }
+
+}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        margin-left: 300px;
+    }
+
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {
+    .header_logo {
+        margin-left: 150px;
+    }
+
+    .header_profile {
+        margin-left: 700px;
+    }
+
+}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {
+    .header_logo {
+        margin-left: 50px;
+    }
+
+    .header_profile {
+        margin-left: 900px;
+    }
+
+
+}

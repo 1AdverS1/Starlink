@@ -1,0 +1,116 @@
+.unlimited {
+    @include display(row);
+    gap: 180px;
+    justify-content: center
+}
+
+.unlimited_post {
+    @include display(column);
+}
+
+.unlimited_post_heading {
+    color: white;
+    font: 700 40px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-left: 150px;
+    margin-top: 150px;
+    line-height: normal;
+}
+
+.unlimited_post_content {
+    color: white;
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-left: 150px;
+
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .unlimited {
+        flex-direction: column-reverse;
+    }
+
+    .unlimited_image {
+        width: 460px;
+        height: 460px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .unlimited_post_heading {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .unlimited_post_content {
+        margin-left: 30px;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .unlimited {
+        gap: 50px;
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .unlimited_image {
+        margin-left: 50px;
+
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .unlimited_post_heading {
+        margin-left: 30px;
+    }
+
+    .unlimited_post_content {
+        margin-left: 30px;
+    }
+
+    .unlimited_image {
+        width: 480px;
+        height: 480px;
+    }
+
+
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .unlimited {
+        gap: 150px;
+    }
+
+    .unlimited_image {
+        width: 584px;
+        height: 584px;
+    }
+
+    .unlimited_post_heading {
+        margin-left: 30px;
+    }
+
+    .unlimited_post_content {
+        margin-left: 30px;
+    }
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .unlimited {
+        gap: 150px;
+    }
+
+    .unlimited_post_heading {
+        margin-left: 30px;
+    }
+
+    .unlimited_post_content {
+        margin-left: 30px;
+    }
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}

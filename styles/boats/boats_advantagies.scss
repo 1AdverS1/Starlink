@@ -1,0 +1,83 @@
+.advantagies {
+    display: flex;
+    justify-content: center;
+}
+
+.advantagies_block_general {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    max-width: 1420px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.advantagies_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right: 70px;
+}
+
+.advantagies_block_heading {
+    color: white;
+    font: 700 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.advantagies_block_content {
+    color: white;
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .advantagies_block_general {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .advantagies_block {
+        border: none;
+        padding: 0;
+    }
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+    .advantagies_block_general {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .advantagies_block {
+        border: none;
+        padding: 0;
+    }
+
+}
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .advantagies_block_general {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .advantagies_block {
+        border: none;
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

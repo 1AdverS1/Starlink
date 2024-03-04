@@ -1,0 +1,116 @@
+.footer {
+    @include display(row);
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.footer_block_first {
+    @include display(column);
+    gap: 15px;
+
+}
+
+.block_first_top {
+    @include display(row);
+    gap: 20px;
+}
+
+.block_first_bottom {
+    @include display(row);
+    gap: 20px;
+}
+
+.footer_block_second {
+    @include display(column);
+
+}
+
+.block_second_top {
+    @include display(row);
+    gap: 20px;
+}
+
+.block_second_bottom {
+    @include display(row);
+    gap: 20px;
+}
+
+.footer_links {
+    color: white;
+    font: 12px/30px Roboto, Helvetica, Arial, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.footer_form {
+    @include wh(180px, 20px, 20px, 420px);
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.form_buttom {
+    padding-top: 10px;
+    color: white;
+    font-family: DIN_Regular, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .block_first_top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .block_first_bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .block_second_top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .block_second_bottom {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer_form {
+        width: 361px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .footer_links {
+        line-height: 15px;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .footer_links {
+        line-height: 15px;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .footer {
+        margin-left: 10px;
+    }
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}

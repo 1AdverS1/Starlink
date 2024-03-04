@@ -1,0 +1,78 @@
+.stream {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/boats/boats_feature1_d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    width: 100%;
+    height: 780px;
+    padding-left: 300px;
+
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+}
+
+.stream_heading {
+    color: white;
+    font: 700 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 100px;
+
+}
+
+.stream_content {
+    color: white;
+    font: 100 14px/20px DIN_Regular, Arial, Verdana, sans-serif;
+
+
+}
+
+@media all and (min-width: 500px) and (max-width: 649px) {
+    .stream_heading {
+        font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+
+    .stream {
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media all and (min-width: 650px) and (max-width: 799px) {
+    .stream {
+        padding-left: 30px;
+    }
+}
+
+@media all and (min-width: 650px) and (max-width: 799px) {}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .stream_heading {
+        font: 700 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+
+    .stream {
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+    .stream {
+        padding-left: 100px;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1499px) {
+    .stream {
+        padding-left: 100px;
+    }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1803px) {
+    .stream {
+        padding-left: 100px;
+    }
+}
+
+@media all and (min-width: 1850px) and (max-width: 1999px) {}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/roam/roam_a_weather_d.webp);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 780px;
+    margin-top: 150px;
+
+}
+
+.weather_heading {
+    color: white;
+    font: 700 40px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 130px;
+    padding-left: 280px;
+}
+
+.weather_text {
+    color: white;
+    font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-top: 20px;
+    padding-left: 280px;
+
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .weather_heading {
+        font: 700 25px/31px DIN_Regular, Arial, Verdana, sans-serif;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .weather_text {
+        padding: 0;
+        margin-left: 20px;
+        font: 400 14px/16px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+
+    .weather {
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .weather_heading {
+        padding-left: 50px;
+    }
+
+    .weather_text {
+        padding-left: 50px;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1204px) {
+    .weather_heading {
+        padding-left: 50px;
+    }
+
+    .weather_text {
+        padding-left: 50px;
+    }
+}
+
+@media all and (min-width: 1205px) and (max-width: 1350px) {
+
+    @media all and (min-width: 1350px) and (max-width: 1516px) {}
+
+}
+
+@media all and (min-width: 1517px) and (max-width: 1710px) {}
+
+@media all and (min-width: 1711px) and (max-width: 1980px) {}

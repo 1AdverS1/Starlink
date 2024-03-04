@@ -1,0 +1,191 @@
+@mixin hoverEffect($backgroundImage) {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(#{$backgroundImage});
+        background-size: cover;
+        transition: transform 0.3s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        transform: scale(1.02);
+    }
+
+}
+
+.other_plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 662px;
+    padding-top: 150px;
+}
+
+.other_plans_heading {
+    color: white;
+    font: 700 51px/62px DIN_Regular, Arial, Verdana, sans-serif;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.other_plans_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.residental {
+    width: 700px;
+    height: 500px;
+    @include hoverEffect('../../images/roam/residential_hero_d.jpg');
+    background-size: cover;
+    padding: 20px;
+}
+
+
+.roam {
+    width: 700px;
+    height: 500px;
+    @include hoverEffect('../../images/roam/roam_hero_d.jpg');
+    background-size: contain;
+    padding: 20px;
+
+}
+
+.choice_heading {
+    font: 600 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+    color: white;
+    padding: 20px 0px 0px 20px;
+}
+
+.choice_content {
+    color: white;
+    font: 400 25px/30px DIN_Regular, Arial, Verdana, sans-serif;
+    padding: 0px 0px 0px 20px;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .roam {
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+    }
+
+    .residental {
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+
+    }
+
+    .other_plans {
+        padding: 0;
+        margin-top: 150px;
+        flex-direction: column;
+    }
+
+    .other_plans_heading {
+        font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 250px;
+    }
+
+    .other_plans_main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .other_plans_heading {
+        font: 600 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .roam {
+        width: 350px;
+        height: 350px;
+    }
+
+    .residental {
+        width: 350px;
+        height: 350px;
+    }
+
+    .other_plans_main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .other_plans_heading {
+        font: 600 40px/49px DIN_Regular, Arial, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .roam {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+    .residental {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+    .other_plans_main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media all and (min-width: 1200px) and (max-width: 1350px) {
+    .roam {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+    .residental {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+    .other_plans_main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+    .roam {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+    .residental {
+        width: 490px;
+        height: 490px;
+        padding: 10px;
+    }
+
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}

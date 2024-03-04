@@ -1,0 +1,137 @@
+.costumers_heading {
+    color: white;
+    font: 200 22px/27px DIN_Regular, Arial, Verdana, sans-serif;
+    margin-left: 330px;
+}
+
+.costumers_main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 330px;
+}
+
+.costumers_box {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;
+    height: 194px;
+    margin-top: 40px;
+}
+
+.costumers_box_heading {
+    font: 700 28px/34px DIN_Regular, Arial, Verdana, sans-serif;
+    letter-spacing: normal;
+    color: white;
+    padding: 0px 50px;
+
+}
+
+.costumers_box_quote {
+    font: 200 14px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    color: white;
+    letter-spacing: normal;
+    padding: 0px 50px;
+    margin: 20px 0px;
+}
+
+.costumers_box_author {
+    font: 400 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+    letter-spacing: normal;
+    color: white;
+    padding: 0px 50px;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .costumers_main {
+        flex-direction: column;
+    }
+
+    .costumers_heading {
+        font: 16px/25px Roboto, Helvetica, Arial, Verdana, sans-serif;
+        margin-left: 10px;
+    }
+
+    .costumers_box_heading {
+        font: 700 22px/27px DIN_Regular, Arial, Verdana, sans-serif;
+    }
+
+    .costumers_main {
+        margin-left: 10px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .costumers_box_heading {
+        font: 700 20px/32px DIN_Regular, Arial, Verdana, sans-serif;
+        padding: 0 20px;
+
+    }
+
+    .costumers_main {
+        margin-left: 30px;
+    }
+
+    .costumers_box_quote {
+        font: 400 12px/16px DIN_Regular, Arial, Verdana, sans-serif;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .costumers_box_author {
+        padding: 10px;
+    }
+
+    .costumers_heading {
+        margin-left: 50px;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1204px) {
+
+    .costumers_main {
+        margin-left: 30px;
+    }
+
+    .costumers_box_quote {
+        font: 400 11px/20px DIN_Regular, Arial, Verdana, sans-serif;
+        padding: 10px;
+
+    }
+
+
+}
+
+@media all and (min-width: 1205px) and (max-width: 1350px) {
+    .costumers_main {
+        margin-left: 30px;
+    }
+
+    .costumers_box_quote {
+        font: 400 14px/20px DIN_Regular, Arial, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+}
+
+@media all and (min-width: 1350px) and (max-width: 1516px) {
+    .costumers_main {
+        margin-left: 50px;
+    }
+
+    .costumers_heading {
+        margin-left: 50px;
+    }
+
+}
+
+@media all and (min-width: 1517px) and (max-width: 1710px) {
+    .costumers_main {
+        margin-left: 200px;
+    }
+
+}
+
+@media all and (min-width: 1711px) and (max-width: 1980px) {}

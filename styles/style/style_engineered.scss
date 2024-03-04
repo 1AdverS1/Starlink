@@ -1,0 +1,109 @@
+.engineered {
+  @include display(column);
+  background-image: url(../../images/engeneering.jpg);
+  background-size: cover;
+  @include wh(100%, 780px);
+  margin-top: 150px;
+
+}
+
+.engineered_heading {
+  color: white;
+  font: 700 40px/34px DIN_Regular, Arial, Verdana, sans-serif;
+  margin-left: 250px;
+  margin-top: 130px;
+}
+
+.engineered_text {
+  color: white;
+  font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+  margin-top: 20px;
+  margin-left: 250px;
+
+}
+
+.engineered_buttom {
+  @include wh(98px, 36px);
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 2px;
+  margin-left: 250px;
+
+}
+
+.engineered_buttom:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.engineered_buttom_text {
+  color: white;
+  font: 200 16px/20px DIN_Regular, Arial, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+  .engineered_heading {
+    margin-left: 20px;
+  }
+
+  .engineered_text {
+    margin-left: 20px;
+  }
+
+  .engineered_buttom {
+    margin-left: 20px;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .engineered_heading {
+    margin-left: 50px;
+  }
+
+  .engineered_text {
+    margin-left: 50px;
+  }
+
+  .engineered_buttom {
+    margin-left: 50px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .engineered_heading {
+    margin-left: 20px;
+  }
+
+  .engineered_text {
+    margin-left: 20px;
+  }
+
+  .engineered_buttom {
+    margin-left: 20px;
+  }
+
+}
+
+@media all and (min-width: 1201px) and (max-width: 1350px) {}
+
+@media all and (min-width: 1350px) and (max-width: 1500px) {
+  .engineered_heading {
+    margin-left: 100px;
+  }
+
+  .engineered_text {
+    margin-left: 100px;
+  }
+
+  .engineered_buttom {
+    margin-left: 100px;
+  }
+
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1980px) {}
